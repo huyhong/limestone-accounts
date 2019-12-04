@@ -41,6 +41,7 @@ The [gemset](https://github.com/archonic/limestone-accounts/blob/master/Gemfile)
 * run `docker-compose run webpack yarn install --pure-lockfile` to install all node modules.
 * run `docker-compose up --build` to create and run the various images, volumes, containers and a network
 * run `docker-compose exec web rails db:setup` to create DB, load schema and seed. Seeding will also create your plan(s) in Stripe.
+  * run `docker-compose exec web rails db:reset` instead if prior attempts to initialize the DB failed. This drops your existing DB so don't do this if you have data saved.
 * Visit lvh.me:3000 and rejoice
 
 ### Bonus points
