@@ -13,6 +13,10 @@ default: &default
   # Reload manifest.json on all requests so we reload latest compiled packs
   cache_manifest: false
 
+  # The upgrade to webpacker 4.0.x changed the `stylesheet_link_pack` behavior, this toggle needs to be added otherwise `application.css` doesn't generate
+  # https://stackoverflow.com/questions/56978950/stylesheet-pack-tag-not-generating-any-output-although-the-css-file-is-present
+  extract_css: true
+
   extensions:
     - .coffee
     - .erb
