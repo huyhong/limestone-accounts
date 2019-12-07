@@ -18,6 +18,8 @@
 
 .byebug_history
 
+/vendor/cache
+
 # Webpacker ignores
 /public/packs
 /public/packs-test
